@@ -10,8 +10,12 @@ namespace SyncFusionChipTemplate
 {
     public partial class MainPage : ContentPage
     {
+        public ChipViewModel ViewModel;
+
         public MainPage()
         {
+            BindingContext = ViewModel = new ChipViewModel();
+
             InitializeComponent();
         }
     }
